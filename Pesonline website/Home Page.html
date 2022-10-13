@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- w3school link -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- icons link -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css style link -->
+    <link rel="stylesheet" href="/css/Home page.css">
+    <!-- css responsive link -->
+    <link rel="stylesheet" href="/css/Home page reponsive.css">
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>PES Electrical Pvt Ltd.</title>
+</head>
+
+<body>
+    <!-- scroll bar -->
+    <div id="process-bar"></div>
+    <!-- onclick top button -->
+    <a href="" id="scroll-btn" onclick="scrollToTop()">
+        <i class='bx bxs-caret-up-circle bx-flip-vertical bx-burst'></i>
+    </a>
+    <!-- form page -->
+    <div class="container-1" id="form">
+        <div class="box">
+            <i class='bx bx-x' id="hide" onclick="hide()"></i>
+            <form action="/action_page.php">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="mail" name="email" placeholder="Your E-Mail Id">
+                <input type="text" id="pnumber" name="phonenumber" placeholder="Your Phone Number">
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+
+    <!-- loader -->
+    <div id="main">
+        <i class='bx bx-loader bx-spin'></i>
+    </div>
+
+    <!-- Requiremet page start-->
+    <div class="box-1" id="Requiremnet-form">
+        <div class="top-heading">
+            <h4>Tell us what you are looking for?</h4>
+            <i class='bx bx-x-circle bx-spin' onclick="hide1()"></i>
+        </div>
+        <div class="big-box">
+            <form action="/action_page.php">
+                <div class="mini--box">
+                    <input type="text" name="" id="" class="text1" placeholder="Name of Product/Services">
+                    <textarea name="" id="" cols="30" rows="5" class="text1"
+                        placeholder="Describe Your Requirement in Detail..."></textarea>
+                </div>
+                <div class="mini--box1">
+                    <input type="text" class="text1" placeholder="Your Name" name="" id="">
+                    <input type="text" class="text1" placeholder="Email" name="" id="">
+                </div>
+                <div class="mini--box1">
+                    <input type="text" class="text1" placeholder="Country" name="" id="">
+                    <input type="text" class="text1" placeholder="Mobile" name="" id="">
+                </div>
+                <a href="/action_page.php"" class="btn3">Send Now</a>
+            </form>
+        </div>
+    </div>
+    <!-- Requiremet page End-->
+
+
+    <!-- Right Button start-->
+    <div id="sideBtn">
+        <a href="#" id="about" onclick="show1()"><i class='bx bx-caret-down'></i>Submit Your Requirement</a>
+    </div>
+    <!-- Right Button End -->
+
+    <!-- navbar section start-->
+    <div class="header">
+        <div class="logo">
+            <a href="Home Page.html"><img src="/image/logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home Page.html">Home</a></li>
+                <li><a href="/About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="/Product.html" class="dropbtn">Product<i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="/Energy meter.html">Energy Meters</a>
+                        <a href="/DTRH Panel.html">DTRH Panel</a>
+                        <a href="/GPRS Modem.html">GPRS Modem</a>
+                        <a href="/home indicator.html">Home Indicator</a>
+                        <a href="/Smart home.html">Smart Home Display Meter</a>
+                        <a href="/WIFI Smart.html">WIFI Smart DG-Mains Plug</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="/Services.html" class="dropbtn">Services<i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="services part1.html">Smart Meter Calibration Services</a>
+                        <a href="services part2.html">Energy Meter AMC Service</a>
+                        <a href="services part3.html">Electric Meter Repair Service</a>
+                    </div>
+                </li>
+                <li><a href="/contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class='bx bx-menu' style="font-size: 30px;"></i>
+            <i class='bx bx-envelope' onclick="show()"></i>
+            <h6 onclick="show()">SEND EMAIL</h6>
+            <i class='bx bx-mobile-alt' onclick="show()"></i>
+            <h6 onclick="show()">SEND SMS</h6>
+        </div>
+    </div>
+    <!-- navbar section ends -->
+
+    <!-- home-page start-->
+    <section id="home-page">
+        <div class="container-2">
+            <a href="/Product.html"><img src="/image/banner1.jpg" class="myslide" alt=""></a>
+            <a href="/Product.html"><img src="/image/banner2.jpg" class="myslide" alt=""></a>
+            <a href="/Product.html"><img src="image/banner3.jpg" class="myslide" alt=""></a>
+            <a href="Product.html"><img src="image/banner4.jpg" class="myslide" alt=""></a>
+        </div>
+    </section>
+    <!-- home-page end -->
+
+    <!-- welcome section start -->
+    <div class="container">
+        <div class="heading">
+            <h1 class="w3-animate-top">WELCOME TO OUR WEBSITE</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <iframe width="550" height="350"
+                    src="https://www.youtube.com/embed/gI1TeIIyoCo?autoplay=1&amp;mute=1&amp;rel=0"
+                    title="PES Electrical Pvt Ltd" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen="">
+                </iframe>
+            </div>
+            <div class="col">
+                <p>Making available reliable and Customized - Home Display Unit, Three Phase Energy Meters, Single
+                    Phase Energy Meters, Energy Management Communication Hardware, Management Software
+                    of various designs, sizes, and specifications. "Our children will enjoy in their homes
+                    electrical energy too cheap to meters" - Lewis L. Strauss It has been almost a decade
+                    since we have been providing the best quality energy meter solution. We have achieved
+                    new growth in the industries that meet our technical advancement and innovation. To
+                    build our position in the industry, we focus on arranging numerous advancements
+                    according to the clientele needs. We work under the very smart solutions and
+                    services that help our customers managing and operating the optimal use of
+                    resources that leverage them for the most benefit. PES Electrical has developed
+                    and designed several divisions in some specific but very smart solutions that help
+                    you manage various necessary resources to increase effectiveness. We discover and
+                    design the best solution for the business associates and resident societies to
+                    provide them an opportunity to always keep them ahead. <a href="About.html">Read More...</a>
+                </p>
+            </div>
+        </div>
+        <div class="heading">
+            <h1 class="w3-animate-top">Glimpse of Our Company</h1>
+        </div>
+        <div class="row1">
+            <div class="col1">
+                <img src="/image/naturelogo.png" class="w3-animate-left" alt="image">
+                <h3 class="w3-animate-left">Nature of Business</h3>
+                <p class="w3-animate-left">Manufacture & Supplier</p>
+            </div>
+            <div class="col1">
+                <img src="/image/buliding logo.png" class="w3-animate-left" alt="image">
+                <h3 class="w3-animate-left">Year of Establishment</h3>
+                <p class="w3-animate-left">2012</p>
+            </div>
+            <div class="col1">
+                <img src="/image/house img.png" class="w3-animate-left" alt="image">
+                <h3 class="w3-animate-left">Market Covered</h3>
+                <p class="w3-animate-left">Domestic</p>
+            </div>
+            <div class="col1">
+                <img src="/image/user logo.png" class="w3-animate-left" alt="image">
+                <h3 class="w3-animate-left">Name of CEO</h3>
+                <p class="w3-animate-left">Mr. C.P Yadav</p>
+            </div>
+        </div>
+    </div>
+    <!-- welcome section end -->
+
+    <!-- latest product start -->
+    <section id="Projects" class="project">
+        <div class="heading">
+            <h1 class="w3-animate-top">Latest Product</h1>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <a href="/image/meter1.jpeg" title="Single Phase Meter">
+                    <img src="/image/meter1.jpeg" alt="">
+                </a>
+                <p>Single Phase Meter</p>
+            </div>
+            <div class="box">
+                <a href="DTRH Panel.html" title="DTRH Panel">
+                    <img src="/image/meter2.png" alt="">
+                </a>
+                <p>DTRH Penal</p>
+            </div>
+            <div class="box">
+                <a href="GPRS Modem.html" title="GPRS Modem">
+                    <img src="/image/meter3.jpeg" alt="">
+                </a>
+                <p>GPRS Modem</p>
+            </div>
+            <div class="box">
+                <a href="home indicator.html" title="Home Indicator">
+                    <img src="/image/meter4.jpeg" alt="">
+                </a>
+                <p>Home Indicator</p>
+            </div>
+            <div class="box">
+                <a href="Smart home.html" title="Snart Home Display Meter">
+                    <img src="/image/meter5.jpeg" alt="">
+                </a>
+                <p>Smart Home Display Meter</p>
+            </div>
+            <div class="box">
+                <a href="WIFI Smart.html" title="WIFI Smart DG_Mains Plug">
+                    <img src="/image/meter6.jpeg" alt="">
+                </a>
+                <p>WIFI Smart DG-Mains Plug</p>
+            </div>
+            <div class="box">
+                <a href="/image/meter7.jpeg" title="Three Phase Meter">
+                    <img src="/image/meter7.jpeg" alt="">
+                </a>
+                <p>Three Phase Meter</p>
+            </div>
+        </div>
+        <div class="text">
+            <p>We will send you the <span>Best Price shortly</span></p>
+            <a href="" onclick="show()" class="btn"><i class='bx bxs-leaf bx-tada bx-flip-horizontal'
+                    style='color:#08ef20'></i> Get Instant Quote</a>
+        </div>
+    </section>
+    <!-- lastest product end -->
+
+    <!-- testimonal start -->
+    <div class="testimonal">
+        <div class="heading">
+            <h1 class="w3-animate-opacity">Testimonials <i class='bx bx-star'></i><i class='bx bx-star'
+                    style="cursor: pointer;"></i><i class='bx bx-star' style="cursor: pointer;"></i></h1>
+        </div>
+        <div class="row3">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/image/img-1.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Infrastructure</p>
+                        <p>Technologically updated infrastructure is constructed by us over a wide area of land to have
+                            hassle-free execution of the trade tasks. It includes specific cells of quality checking,
+                            storage, production, accounting, research & development, production, etc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/image/img-2.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Vision</p>
+                        <p>PES ELECTRICAL PVT LTD shall be the most trusted, respected and preferred brand for Three
+                            Phase Energy Meters, Single Phase Energy Meters Home Display Unit, AMF Relays, Energy
+                            Management Communication Hardware, Management Software, Smart dg-main Plug, and AVRs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/image/img-3.jpg" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>John Doe</h1>
+                        <p>Quality Assurance</p>
+                        <p>To establish ourselves in the roots of the industry, we are giving high attention on making
+                            and delivering quality products to the clients. Under the observation of experienced quality
+                            controllers, our entire range is made from the finest materials in sync with the national
+                            norms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testminal ends -->
+
+    <!-- contact us start -->
+    <!-- <div class="contact-us"> 
+        <div class="box-1">
+            <form action="">
+                <input type="text" placeholder="Name" name="" id="">
+                <input type="text" placeholder="Email" name="" id="">
+                <input type="text" placeholder="Phone" name="" id="">
+                <input type="text" placeholder="Country" name="" id="">
+                <textarea name="" id="" cols="40" rows="10" placeholder="Text Here"></textarea> <br>
+                <a href="" class="btn1">Send Message</a>
+            </form>
+        </div>
+    </div>  -->
+    <!-- contact us end -->
+
+    <!-- breadcrumb start -->
+    <ul class="breadcrumb">
+        <li><a href="/Home Page.html">Home</a></li>
+        <li><a href="/About.html">About</a></li>
+        <li><a href="/Product.html">Products</a></li>
+        <li><a href="/Services.html">Services</a></li>
+        <li><a href="">Testimonial</a></li>
+        <li><a href="/contact-us.html">Contact Us</a></li>
+        <a href="">
+            <p><span class="w3-badge w3-red">Rss</span></p>
+        </a>
+    </ul>
+    <!-- breadcrumb end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="row4">
+            <div class="col-1">
+                <a href="/Home Page.html"><img src="/image/logo.png" alt=""></a>
+            </div>
+            <div class="col-1">
+                <h2>Quick Contact</h2>
+                <p><i class='bx bx-building'></i> PES Electrical Pvt Ltd</p>
+                <p><i class='bx bx-user'></i>Mr. C.P Yadav</p>
+                <p><i class='bx bx-location-plus'></i>Plot No.1 Opposite Govt School <br> Sector-73, Faridabad, Haryana
+                    - 121004, India</p>
+                <p><i class='bx bx-mobile-alt'></i> +91-9810208597, +91-9810261185</p>
+                <p><i class='bx bx-envelope'></i> <a href="">info@pesonline.co.in</a></p>
+            </div>
+            <div class="col-1">
+                <h2>Products</h2>
+                <p><i class='bx bx-chevron-right'></i> <a href="/Energy meter.html">Energy Meter</a> </p>
+                <p><i class='bx bx-chevron-right'></i> <a href="/GPRS Modem.html">GPRS Modem</a> </p>
+                <p><i class='bx bx-chevron-right'></i><a href="Smart home.html">Smart Home Display Meter</a></a>
+                <p><i class='bx bx-chevron-right'></i> <a href="/DTRH Panel.html">DTRH Panel</a> </p>
+                <p><i class='bx bx-chevron-right'></i><a href="/home indicator.html">Home Indicator</a></p>
+                <p><i class='bx bx-chevron-right'></i><a href="WIFI Smart.html">WIFI Smart DG-Mains Plug</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <div class="footer-text">
+        <p>© 2022 <a href="/Home Page.html" style="color: skyblue;">PES ELECTRICAL PVT LTd.</a> All rights reserved.</p>
+    </div>
+
+    <script src="/javascript/PES website.js"></script>
+    <script>
+        function scrollToTop() {
+            window.screenTop(0, 0);
+        }
+    </script>
+</body>
+
+</html>

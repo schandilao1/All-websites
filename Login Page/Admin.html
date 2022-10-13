@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Admin.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Admin</title>
+</head>
+<body>
+
+    <div class="container-fluid mb-5">
+        <div class="container">
+            <h1>Login Page</h1>
+            <div class="row mx-auto">
+                <div class="col">
+                    <form id="login-form">
+                        <div class="box">
+                            <h2>Site Id</h2>
+                            <input type="password" name="site" id="sId" class="login-form-field" placeholder="Site Id">
+                        </div>
+                        <div class="box">
+                            <h2>Username</h2>
+                            <input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="Username">
+                        </div>
+                        <div class="box">
+                            <h2>Password</h2>
+                            <input type="password" name="password" id="password-field" class="login-form-field"
+                                placeholder="Password">
+                            <div class="eye">
+                                <i class='bx bx-show' id="show" onclick="show()"></i>
+                                <i class='bx bx-hide' id="hide" onclick="show()"></i>
+                            </div>
+                        </div>
+                        <br>
+                        <input type="submit" value="Login" class="btn btn-primary btn-lg" id="login-form-submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function show() {
+            var x = document.getElementById('password-field');
+            var y = document.getElementById('show');
+            var z = document.getElementById('hide');
+
+            if (x.type === 'password') {
+                x.type = 'text';
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else {
+                x.type = 'password';
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+
+        const loginForm = document.getElementById("login-form");
+        const loginButton = document.getElementById("login-form-submit");
+
+        loginButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            const site = loginForm.site.value;
+            const username = loginForm.username.value;
+            const password = loginForm.password.value;
+
+            if (site === "@123" && username === "sumitchandila_o1" && password === "Sumit123") {
+                window.alert("Welcome to Your Website PES ELECTRICAL PVT LTD");
+                location.assign("http://127.0.0.1:5501/Home%20Page.html");
+            }
+            else if (site === "" && username === "" && password === "") {
+                window.alert("Ooops!! Enter A SiteId Username And Password");
+            }
+            else if (site != "@123" && username === "sumitchandila_o1" && password === "Sumit123") {
+                window.alert("Incorrect SiteId");
+            }
+            else if (site === "@123" && username != "sumitchandila_o1" && password === "Sumit123") {
+                window.alert("Incorrect Username");
+            }
+            else if (site === "@123" && username === "sumitchandila_o1" && password != "Sumit123") {
+                window.alert("Incorrect Password");
+            }
+            else {
+                window.alert("Nothing Is Wrong Please Check A Value");
+            }
+        })
+    </script>
+
+</body>
+
+</html>

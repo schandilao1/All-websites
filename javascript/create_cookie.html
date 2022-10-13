@@ -1,0 +1,29 @@
+<html>
+<head>
+<title> Create Cookies </title>
+</head>
+
+<body>
+<input type="button" value="setCookie" onClick="setCookie()">
+<input type="button" value="getCookie" onClick="getCookie()">
+
+<script>
+function setCookie()
+{
+document.Cookie = "";
+}
+
+function getCookie()
+{
+if(document.Cookie.length!=0)
+   {
+     alert(document.Cookie);
+   }
+else {
+     alert("Cookie not available");
+    }
+}
+</script>
+
+</body>
+</html>

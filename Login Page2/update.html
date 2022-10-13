@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="/Admin.css"> -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>PES</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        html {
+            font-size: 80%;
+        }
+
+        /* nav {
+            display: flex;
+            background: rgb(0, 0, 0, 0.5);
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 1rem 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        } */
+
+        .container {
+            width: 100%;
+        }
+
+        .container h1 {
+            letter-spacing: 1rem;
+            text-align: center;
+            padding: 5rem 0rem;
+            font-weight: 900;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .row {
+            width: 55%;
+        }
+
+        .col {
+            border-radius: 10px;
+            padding: 2rem 0rem;
+            background: rgba(159, 157, 157, 0.5);
+        }
+
+        .col .box {
+            padding: .5rem 0rem;
+        }
+
+        .col #login-form {
+            padding: 0rem 2rem;
+        }
+
+        .col .box h2 {
+            color: white;
+            font-size: 22px;
+            font: bolder;
+        }
+
+        .col .box .login-form-field {
+            width: 100%;
+            outline: none;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: 2px solid #ffffff;
+            padding: .5rem 0rem;
+            font-size: 16px;
+            background: transparent;
+            z-index: 4;
+            display: flex;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 1rem 0rem;
+            border: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .5s;
+            border-radius: 15px;
+        }
+
+        .btn:hover {
+            background: #043653;
+        }
+
+
+        @media screen and (max-width: 775px) {
+            html {
+                font-size: 50%;
+            }
+
+            .col .box h2 {
+                color: rgb(53, 53, 53);
+                font-size: 15px;
+                font: bolder;
+            }
+
+            .col .box .login-form-field {
+                font-size: 10px;
+
+            }
+        }
+
+        @media screen and (max-width: 555px) {
+            html {
+                font-size: 40%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            html {
+                font-size: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav>
+        <h1>PES</h1>
+        <ul>
+            <li><a href="/pesButton.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Feedback</a></li>
+        </ul>
+    </nav> -->
+    <div id="liveAlertPlaceholder"></div>
+    <div class="container-fluid mb-5">
+        <div class="container my-5">
+            <div class="row mx-auto">
+                <div class="col">
+                    <form id="login-form">
+                        <div class="box">
+                            <h2>1st Add</h2>
+                            <input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="Form">
+                            <input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="To">
+                        </div>
+                        <div class="box">
+                            <h2>2st Add</h2>
+                            <input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="Form">
+                            <input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="To">
+                        </div>
+                        <div class="box">
+                            <h2>3st Add</h2>
+                            <input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="Form">
+                            <input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="To">
+                        </div>
+                        <div class="box">
+                            <h2>4st Add</h2>
+                            <input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="Form">
+                            <input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="To">
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-primary" id="liveAlertBtn"
+                            onclick="myfun()">Update</button>
+                        <br>
+                        <br>
+                        <a href="/pesButton.html" class="btn btn-primary">Back</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myfun(){
+            alert("Update Sucessfully")
+        }
+        // const checkInput = document.getElementById("login-form")
+        // const checkBtn = document.getElementById("liveAlertBtn")
+
+        // checkBtn.addEventListener("click", (ev) => {
+        //     e.preventDefault();
+        //     const username = loginForm.username.value;
+        //     if(username == " ")
+        //     {
+        //         alert("enter the details");
+        //     }
+        // })
+    </script>
+
+
+    <!-- <script>
+    const loginForm = document.getElementById("login-form");
+    const loginButton = document.getElementById("login-form-submit");
+
+    loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if (username === "Admin" && password === "Admin") {
+    window.alert("Welcome");
+    location.assign("http://127.0.0.1:5501/pesButton.html");
+    }
+    else if (username == "" && password == "") {
+    window.alert("Ooops!! Enter A SiteId Username And Password");
+    }
+    else if (username != "Admin" && password == "Admin") {
+    window.alert("Incorrect Username");
+    }
+    else if (username == "Admin" && password != "Admin") {
+    window.alert("Incorrect Password");
+    }
+    else {
+    window.alert("Nothing Is Wrong Please Check A Value");
+    }
+    })
+    </script> -->
+
+</body>
+
+</html>

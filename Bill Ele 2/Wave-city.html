@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave-city</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        html {
+            font-size: 74%;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th {
+            border: 1px solid black;
+        }
+
+        span {
+            padding: 0rem 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="main" style="border: 1px solid black;">
+        <div class="heading" style="display: flex; justify-content:space-between; width: 98%; margin: auto;">
+            <h2 style="font-size: 14px;">Wave City - Electricity <br>
+                Regd. Office : Mezzanine Floor, M - 4 <br>
+                South Extension Part II, New Delhi 110049 <br>
+                CIN No : U40300DL2013PTC255695 <br>
+            </h2>
+            <div class="logo">
+                <img src="/Image/wave city logo.jpeg" alt="logo" style="width: 20rem;">
+            </div>
+        </div>
+        <h3 style="text-align:center;">ELECTRICITY USES</h3>
+        <div class="container" style="display: flex; justify-content:space-between; width: 98%; margin: auto;">
+            <div class="left">
+                <p>Consumer Name <span>Mrigna Gupta</span></p>
+                <p>Floor No <span>1297G/GF</span></p>
+                <p>Address <span>Sector - 2, Pinewood Enclave, Wave City,<br> Ghaziabad</span></p>
+                <p>Customer ID <span>0</span></p>
+                <p>Sanction Load Main <span>3.00 <b>KW</b></span></p>
+                <p>Sanction Load DG <span>1.00 <b>KW</b></span></p>
+            </div>
+            <div class="right">
+                <p>Bill Date<span>01/01/2019</span></p>
+                <p>Period <span>28/12/2017 - 31/12/2018</span></p>
+                <p>MeterID <span>459</span></p>
+                <p>Bill No <span>5496</span></p>
+                <p>Area of Unit <span>931.39 Sq feet</span></p>
+            </div>
+        </div>
+        <table style="width: 98%; margin: .5rem auto; border-collapse: collapse;">
+            <tr>
+                <th>Parameter</th>
+                <th>MeterNo</th>
+                <th>MF</th>
+                <th>Initial Reading</th>
+                <th>Date</th>
+
+                <th>Final Reading</th>
+                <th>Date</th>
+                <th>Parameter Value</th>
+            </tr>
+            <tr>
+                <td>Grid Energy</td>
+                <td></td>
+                <td>1.00</td>
+                <td>0.00</td>
+                <td>28/12/2017</td>
+                <td> 0.70</td>
+                <td>31/12/2018</td>
+                <td>0.70 units</td>
+            </tr>
+            <tr>
+                <td>DG Energy</td>
+                <td></td>
+                <td>1.00</td>
+                <td>0.00</td>
+                <td>28/12/2017</td>
+                <td> 0.40</td>
+                <td>31/12/2018</td>
+                <td>0.40 units</td>
+            </tr>
+            <tr>
+                <td>Total Energy</td>
+                <td></td>
+                <td>1.00</td>
+                <td>0.00</td>
+                <td>28/12/2017</td>
+                <td> 0.70</td>
+                <td>31/12/2018</td>
+                <td> 1.10 units</td>
+            </tr>
+        </table>
+        <table style="width: 98%; margin:auto; border-collapse: collapse;">
+            <tr>
+                <th colspan="3" style="text-align: left; padding: 0rem 1rem;">Description</th>
+                <th>Effective Rate</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Grid Energy Charges /unit</td>
+                <td>6.40</td>
+                <td>0.70 units</td>
+                <td>4.48</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Fixed Charges Grid / KW</td>
+                <td> 99.75</td>
+                <td>3.00 <b>KW</b></td>
+                <td> 3629.61</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Regulatory Charges on Grid Energy and
+                    Fixed Charges</td>
+                <td> 0.00</td>
+                <td></td>
+                <td> 0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Electricity Duty on Grid Energy and Fixed
+                    Charges</td>
+                <td> 0.00</td>
+                <td></td>
+                <td> 0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">System Losses Charges on Grid Energy and
+                    Fixed Charges</td>
+                <td> 0.00 %</td>
+                <td></td>
+                <td> 0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">MDI Surcharge</td>
+                <td> 0.00</td>
+                <td></td>
+                <td> 0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">DG Energy Charges /unit</td>
+                <td> 19.00</td>
+                <td>0.40 units</td>
+                <td> 7.60</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">SGST + CGST on DG Energy Charges</td>
+                <td> 18.00 %</td>
+                <td></td>
+                <td>1.37</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Demand Charges on DG / KW</td>
+                <td>200.00</td>
+                <td>1.00 <b>KW</b></td>
+                <td>2425.81</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">SGST + CGST on Demand Charges on DG</td>
+                <td>18.00 %</td>
+                <td></td>
+                <td>436.65</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Demand Charges on DG / KW</td>
+                <td> 19.00</td>
+                <td>0.40 units</td>
+                <td> 7.60</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Prepaid meter service charge</td>
+                <td>20.00</td>
+                <td></td>
+                <td> 20.00</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">SGST + CGST on Prepaid meter service
+                    charge </td>
+                <td>18.00 %</td>
+                <td></td>
+                <td>3.60</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Misc Charges (Dr.)</td>
+                <td></td>
+                <td></td>
+                <td> 0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Misc Charges (Cr.)</td>
+                <td></td>
+                <td></td>
+                <td> 0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Previous Bill Balance</td>
+                <td></td>
+                <td></td>
+                <td> 0.00</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: left; padding: 0rem 1rem;">Recharge Amount Total</td>
+                <td></td>
+                <td></td>
+                <td> 0.00</td>
+            </tr>
+        </table>
+        <h5 style="width: 98%; margin:auto; padding-top:1rem;">Ledger</h5>
+        <table style="width: 98%; margin:auto; border-collapse: collapse;">
+            <tr>
+                <th>Date</th>
+                <th>Opening Balance</th>
+                <th>Debit</th>
+                <th>Credit</th>
+                <th>Closing Balance</th>
+                <th>Remark</th>
+            </tr>
+            <tr>
+                <td>01/01/2019</td>
+                <td>0.00</td>
+                <td>6710.82</td>
+                <td> 0.00</td>
+                <td>-6710.82</td>
+                <td></td>
+            </tr>
+        </table>
+        <h5 style="width: 98%; margin:auto; padding-top:.5rem;">Notes</h5>
+        <div class="footer" style="width: 98%; margin:auto; padding-top:.5rem;">
+            <p><b>1.</b> The payment to be made in favour of <b>Wave City - Electricity.</b></p>
+            <p><b>2.</b> The payment can be made by <b>Cheque / Demand draft / Pay Order</b> at facility management
+                office or at designated drop <br>
+                boxes. Please write your unit number and mobile number at the back side of the instrument.</p>
+            <p><b>3.</b> Payment can be made via NEFT / RTGS with the following details. A/C Name <b>Wave City -
+                    Electricity</b> , A/C
+                No. <br>
+                <b>023563700001790</b> BANK <b>Yes Bank Ltd., Nehru Place, New Delhi</b> IFS Code <b>YESB0000235.</b>
+                Please <br>
+                send us payment confirmation along with reference no. of payment on email id <b>weapdpl@wavecity.in</b>
+            </p>
+            <p><b>4.</b> Please make timely payments as Electricity connection may be disconnected without notice in
+                case the payment is not in <br>
+                done in time or negative balance limits get over</p>
+            <p><b>5.</b> The cheque bounce charges are as Rs. 200 per cheque per bounce.</p>
+        </div>
+    </div>
+    <table style="width: 100%; margin-top: .7rem; border: 1px solid black; border-collapse: collapse;">
+        <tr>
+            <th style="border: none;">Bill Payment Counter Foil </th>
+            <th style="border: none;">Project Name : WAVE CITY Ghaziabad </th>
+            <td style="border: none;"><b>Floor No.</b> <span>1297G/GF</span> </td>
+            <td style="border: none;"><b></b> <span></span> </td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Customer ID</b> <span>0</span></td>
+            <td style="border: none;"><b>Bill No</b> <span>5496</span></td>
+            <td style="border: none;"><b>Bill Amt </b> <span>-6710.82</span></td>
+            <td style="border: none;"><b>Cheque/DD No/NEFT</b> <span>------------</span></td>
+        </tr>
+        <tr>
+            <td style="border: none;"><b>Cheque/DD No/NEFT Date</b> <span>--------</span></td>
+            <td style="border: none;"><b>Bank / Branch </b> <span>-----------</span></td>
+            <td style="border: none;"><b>Payment Amt </b> <span>--------------</span></td>
+            <td style="border: none;"><b>Payment Date</b> <span>---------</span></td>
+        </tr>
+    </table> -->
+    
+    <script src="/locationHerf.js"></script>
+</body>
+
+</html>

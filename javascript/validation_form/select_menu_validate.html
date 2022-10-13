@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> Select Menu </title>
+</head>
+
+<body>
+Select Fruit:
+<select id="ddlfruits">
+<option value=" "> </option>
+<option value="1"> Apple </option>
+<option value="2"> Mango </option>
+<option value="3"> Orange </option>
+</select>
+
+<br><br>
+
+<input type="submit" value="submit" onclick="return validate()">
+
+<script>
+function validate(){
+var fru = document.getElementById("ddlfruits");
+if(ddlfruits.value==" ")
+{
+alert("please select an option!");
+return false;
+}
+}
+</script>
+
+</body>
+</html>

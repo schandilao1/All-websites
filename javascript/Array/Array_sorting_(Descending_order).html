@@ -1,0 +1,34 @@
+<html>
+<head>
+<title> Array Sorting (Descending Order) </title>
+</head>
+
+<body>
+<h2> Javascript Array Sort </h2>
+<p> Sort list on reading: </p>
+
+<p id="demo"> </p>
+
+<script>
+var list = [
+             {date: '12/1/2011', reading: 3, id: 2001},
+             {date: '13/1/2011', reading: 5, id: 2005},
+             {date: '14/1/2011', reading: 6, id: 4565},
+              ];
+
+displayList();
+
+list.sort(function(a,b){return b.reading - a.reading});
+displayList();
+
+function displayList(){
+document.getElementById("demo").innerHTML = 
+     list[0].date + " " + list[0].reading + " " + list[0].id + "<br>" + "<br>" +
+     list[1].date + " " + list[1].reading + " " + list[1].id + "<br>" + "<br>" +
+     list[2].date + " " + list[2].reading + " " + list[2].id ;
+}
+
+</script>
+
+</body>
+</html>

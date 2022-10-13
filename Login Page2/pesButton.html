@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootsrtap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+
+    <title>PES</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* nav {
+            display: flex;
+            background: rgb(0, 0, 0, 0.5);
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 1rem 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        } */
+
+        .container {
+            width: 100%;
+        }
+
+        .container h1 {
+            letter-spacing: 1rem;
+            text-align: center;
+            padding: 5rem 0rem;
+            font-weight: 900;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .row {
+            width: 45%;
+        }
+
+        .col {
+            border-radius: 10px;
+            padding: 2rem 0rem;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .col .box {
+            padding: .9rem 0rem;
+        }
+
+        .col #login-form {
+            padding: 0rem 2rem;
+        }
+
+        .col .box h2 {
+            color: white;
+            font-size: 22px;
+            font: bolder;
+        }
+
+        .col .box .login-form-field {
+            width: 100%;
+            outline: none;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: 2px solid #ffffff;
+            padding: .5rem 0rem;
+            font-size: 16px;
+            background: transparent;
+            color: white;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 1rem 0rem;
+            border: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .5s;
+            border-radius: 15px;
+        }
+
+        .btn:hover {
+            background: #043653;
+        }
+
+        @media screen and (max-width: 775px) {
+            html {
+                font-size: 50%;
+            }
+
+            /* .container {
+        width: 100%;
+    } */
+
+            .col .box h2 {
+                color: rgb(53, 53, 53);
+                font-size: 15px;
+                font: bolder;
+            }
+
+            .col .box .login-form-field {
+                font-size: 10px;
+
+            }
+        }
+
+        @media screen and (max-width: 555px) {
+            html {
+                font-size: 40%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            html {
+                font-size: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav>
+        <h1>PES</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Feedback</a></li>
+        </ul>
+    </nav> -->
+
+    <div class="container-fluid mb-5">
+        <div class="container my-5">
+            <div class="row mx-auto">
+                <div class="col">
+                    <form id="login-form">
+
+                        <div class="box">
+                            <a href="SSID.html"  class="btn btn-primary btn-lg">
+                                FILL SSID / PASSWORD
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href=""  class="btn btn-primary btn-lg">
+                                OTA UPDATE
+                            </a>
+                        </div>
+                        <div class="box">
+                            <a href="/update.html"  class="btn btn-primary btn-lg">
+                                UPDATE ADD
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

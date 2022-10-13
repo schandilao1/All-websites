@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- icons link -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css style link -->
+    <link rel="stylesheet" href="/css/About.css">
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>PES Electrical Pvt Ltd.</title>
+</head>
+
+<body>
+    <!-- form  -->
+    <div class="container-1" id="form">
+        <div class="box">
+            <i class='bx bx-x' id="hide" onclick="hide()"></i>
+            <div class="mini-box">
+                <form action="/action_page.php">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="mail" name="email" placeholder="Your E-Mail Id">
+                    <input type="text" id="pnumber" name="phonenumber" placeholder="Your Phone Number">
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- loader -->
+    <div id="main">
+        <i class='bx bx-loader bx-spin'></i>
+    </div>
+
+    <!-- top info start -->
+    <div class="top-info">
+        <div class="row">
+            <div class="col">
+                <i class='bx bx-location-plus'></i>
+                <p> SECTOR-73, FARIDABAD, HARYANA</p>
+                <p>GST NO. : 06AAGCP6087P1ZN</p>
+            </div>
+            <div class="col">                                                                                                                                            
+                <i class='bx bx-envelope' onclick="show()"></i>
+                <p onclick="show()">SEND EMAIL</p>
+                <i class='bx bx-mobile-alt' onclick="show()"></i>
+                <p onclick="show()">SEND SMS</p>
+            </div>
+        </div>
+    </div>
+    <!-- top info end -->
+
+    <!-- navbar section start-->
+    <div class="header">
+        <div class="logo">
+            <a href="Home Page.html"><img src="/image/logo.png" alt="logo"></a>
+        </div>
+        <i class='bx bx-menu'></i>
+        <nav>
+            <ul>
+                <li><a href="/Home Page.html">Home</a></li>
+                <li><a href="/About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="/Product.html" class="dropbtn">Product<i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="/Energy meter.html">Energy Meters</a>
+                        <a href="/DTRH Panel.html">DTRH Panel</a>
+                        <a href="/GPRS Modem.html">GPRS Modem</a>
+                        <a href="/home indicator.html">Home Indicator</a>
+                        <a href="/Smart home.html">Smart Home Display Meter</a>
+                        <a href="/WIFI Smart.html">WIFI Smart DG-Mains Plug</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Services.html" class="dropbtn">Services<i class='bx bx-caret-down'></i></a>
+                    <div class="dropdown-content">
+                        <a href="services part1.html">Smart Meter Calibration Services</a>
+                        <a href="services part2.html">Energy Meter AMC Service</a>
+                        <a href="services part3.html">Electric Meter Repair Service</a>
+                    </div>
+                </li>
+                <li><a href="/contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- navbar section ends -->
+
+    <!-- About text start -->
+    <div class="About">
+        <div class="heading">
+            <h2 class="w3-animate-left">About Us</h2>
+        </div>
+        <ul class="breadcrumb">
+            <li><a href="/Home Page.html"><i class='bx bxs-home-alt-2'></i>Home</a></li>
+            <li><a href="/About.html"><span>About Us</span></a></li>
+        </ul>
+        <div class="text">
+            <div class="info">
+                <p>To contribute towards the economic growth as well as environment protection by replacing power
+                    consuming products with energy management products, we, PES Electrical PVT.LTD is working day and
+                    night. Our firm is a specialized manufacturer, supplier and trader of Home Display Unit, AMF Relays,
+                    Three Phase Energy Meters, Energy Management Communication Hardware, Management Software, etc. These
+                    are made by our skilled workers from superior quality spares and materials in sync with the national
+                    norms. Our products are simple to install/ operate, modern in design, reliable, and durable due to
+                    which these are extensively demanding. For meeting the different requirements of the clients, we are
+                    making available our products in several models, sizes, and technical specifications. In addition to
+                    the impressive gamut, we are growing in the industry leveraging the hard work of our professionals
+                    and support of the linked eminent firm</p>
+                <img src="/image/About image.jpg" title="Company Image" style="cursor:pointer;">
+            </div>
+            <div class="info1">
+                <h4>Quality Assurance</h4>
+                <p>To establish ourselves in the roots of the industry, we are giving high attention on making and
+                    delivering quality products to the clients. Under the observation of experienced quality
+                    controllers, our entire range is made from the finest materials in sync with the national norms.
+                    These personnel also evaluate all the developed as well as procured items of our energy management
+                    and home display units to ensure absolute perfection, before allowing for dispatch. In the testing
+                    cell, our gamut is checked on the grounds of its finishing, performance, durability, construction,
+                    etc.</p>
+            </div>
+            <div class="info1">
+                <h4>Infrastructure We Own</h4>
+                <p>echnologically updated infrastructure is constructed by us over a wide area of land to have
+                    hassle-free execution of the trade tasks. It includes specific cells of quality checking, storage,
+                    production, accounting, research & development, production, etc. The manufacturing cell supports us
+                    like a backbone, here we have installed several machines, tools and devices that aid in making the
+                    gamut in an excellent speed. After production, the entire range is stocked in bulk quantity at the
+                    maintained massively spreading spacious warehouse..</p>
+            </div>
+            <div class="info1">
+                <h4>Our Vision</h4>
+                <p> <i class='bx bxs-log-in-circle'></i> PES ELECTRICAL PVT LTD shall be the most trusted, respected and
+                    preferred brand for Three Phase
+                    Energy Meters, Single Phase Energy Meters Home Display Unit, AMF Relays, Energy Management
+                    Communication Hardware, Management Software, Smart dg-main Plug, and AVRs.</p>
+                <br>
+                <p> <i class='bx bxs-log-in-circle'></i>As a leading company, PES ELECTRICAL plays a critical role in
+                    tackling the energy transition and the
+                    impact of widespread digitalization on people’s lives:</p>
+            </div>
+            <div class="info1">
+                <h4>Our Mission</h4>
+                <p> <i class='bx bxs-log-in-circle'></i> Our Mission is to provide innovative energy solutions and
+                    products on the go every day everywhere.</p>
+            </div>
+            <div class="info1">
+                <h4>Our Client List</h4>
+                <p> <i class='bx bxs-label'></i> Amrapali Platinum, Noida</p>
+                <p><i class='bx bxs-label'></i> Amrapali Zodiac, Noida</p>
+                <p><i class='bx bxs-label'></i> Eldeco, sec-119, Noida</p>
+                <p><i class='bx bxs-label'></i> The 3C- Essencia, Noida</p>
+                <p><i class='bx bxs-label'></i> The 3C Panache, sec-100, Noida</p>
+                <p><i class='bx bxs-label'></i> Divyansh Pratham, Noida</p>
+            </div>
+        </div>
+    </div>
+    <ul class="breadcrumb1">
+        <li><a href="/Home Page.html">Home</a></li>
+        <li><a href="/About.html">About</a></li>
+        <li><a href="/Product.html">Products</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Testimonial</a></li>
+        <li><a href="">Contact Us</a></li>
+        <a href="">
+            <p><span class="w3-badge w3-red">Rss</span></p>
+        </a>
+    </ul>
+    <!-- About text end -->
+
+    <!-- footer-text -->
+    <div class="footer-text">
+        <p>© 2022 <a href="/Home Page.html" style="color: skyblue;">PES ELECTRICAL PVT LTd.</a> All rights reserved.</p>
+    </div>
+    <script src="/javascript/PES website.js"></script>
+</body>
+
+</html>

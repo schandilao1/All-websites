@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin: auto;
+            width: 90%;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgb(169, 169, 169);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 25rem;
+            height: 20rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Grid Elements</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg"
+                alt="logo">
+        </div>
+        <div class="grid-item"><img
+                src="https://thumbs.dreamstime.com/b/hand-holding-glass-globe-ball-tree-growing-green-nature-blur-background-eco-concept-161081206.jpg"
+                alt="logo"></div>
+        <div class="grid-item"><img
+                src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg"
+                alt="logo"></div>
+        <div class="grid-item"><img
+                src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg"
+                alt="logo"></div>
+        <div class="grid-item"><img
+                src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg"
+                alt="logo"></div>
+        <div class="grid-item"><img
+                src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg"
+                alt="logo"></div>
+        <div class="grid-item"><img
+                src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg"
+                alt="logo"></div>
+        <div class="grid-item"><img
+                src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg"
+                alt="logo"></div>
+        <div class="grid-item"><img
+                src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg"
+                alt="logo"></div>
+    </div>
+    <!-- <div id="demo">
+        <button onclick="myFun()">click</button>
+    </div> -->
+</body>
+<script>
+    // function doSomething() {
+    //     console.log(this);
+    // }
+
+    // doSomething()
+
+    // var obj = {
+    //     name: "vivek",
+    //     getName: function () {
+    //         console.log(this.name);
+    //     }
+    // }
+
+    // obj.getName();
+
+    // let newObj = {
+    //     Age:"20",
+    //     getAge: function(){
+    //         console.log(this.Age);
+    //     }
+    // }
+    // newObj.getAge();
+
+
+    // var obj = {
+    //     name: "vivek",
+    //     getName: function () {
+    //         console.log(this.name);
+    //     }
+    // }
+
+    // var getName = obj.getName;
+
+    // var obj2 = {
+    //     name: "akshay", getName
+    // };
+    // obj2.getName();
+
+    // let myObject = {
+    //     firstName: "Sumit",
+    //     lastName: "Chandila",
+    //     fullName: function (){
+    //         return this.firstName + " " + this.lastName;
+    //     }
+    // }
+    // console.log(myObject.fullName());
+
+    // var person = {
+    //     age: 23,
+    //     getAge: function () {
+    //         return this.age;
+    //     }
+    // }
+    // var person2 = { age: 54 };
+    // console.log(person.getAge.call(person2));
+
+    // const person1 = {
+    //     firstName: "John",
+    //     lastName: "Doe"
+    // }
+
+    // const person2 = {
+    //     firstName: "Mary",
+    //     lastName: "Doe"
+    // }
+    // const person = {
+    //     fullName: function (city, country) {
+    //         return this.firstName + " " + this.lastName + "," + city + "," + country;
+    //     }
+    // }
+
+    // console.log(typeof person.fullName.call(person1, "Haryana", "Faridabad"));
+    // console.log(person.fullName.call(person2, "Haryana", "Gurugram"));
+
+    // function saySomething(message) {
+    //     return this.name + " is " + message;
+    // }
+    // var person4 = { name: "John" };
+    // console.log(saySomething.apply(person4, ["awesome"]));
+
+
+    //     var bikeDetails = {
+    //         displayDetails: function (registrationNumber, brandName) {
+    //             return this.name + " , " + "bike details: " + registrationNumber + " , " + brandName;
+    //         }
+    //     }
+
+    //     var person1 = { name: "Vivek" };
+
+    //     var detailsOfPerson1 = bikeDetails.displayDetails.bind(person1, "TS0122", "Bullet");
+
+    //     // Binds the displayDetails function to the person1 object
+
+
+    //     console.log(detailsOfPerson1());
+    // // Returns Vivek, bike details: TS0452, Bullet
+
+    // const numbers = [1, 2, 3, 4];
+    // const doubled = numbers.map(item => item * 2);
+    // console.log(doubled); // [2, 4, 6, 8]
+
+    // const numbers = [4, 9, 16, 25];
+    // console.log(numbers.map(Math.sqrt));
+
+    // const numbers = [65, 44, 12, 4];
+    // const newArr = numbers.map(myFunction)
+
+    // function myFunction(num) {
+    //     return num * 10;
+    // }
+    // console.log(newArr);
+
+
+    // function myFun() {
+    //     document.createElement("textarea");
+    //     x.setAttribute("type", "text");
+    //     x.setAttribute("value", "john@example.com");
+    //     document.body.appendChild(x);
+    // }
+
+    // function myFun() {
+    //     var x = document.createElement("");
+    //     document.body.appendChild(x);
+    // }
+
+    const students = [
+        { name: 'Quincy', grade: 96 },
+        { name: 'Jason', grade: 74 },
+        { name: 'Alexis', grade: 100 },
+        { name: 'Sam', grade: 105 },
+        { name: 'Katie', grade: 90 }
+    ];
+
+    const studentGrades = students.filter(student => student.grade >= 90);
+    // return studentGrades;
+    console.log(studentGrades)
+// [ { name: 'Quincy', grade: 96 }, { name: 'Alexis', grade: 100 }, { name: 'Katie', grade: 90 } ]
+</script>
+
+
+</html>

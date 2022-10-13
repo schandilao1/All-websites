@@ -1,0 +1,24 @@
+<html>
+<head>
+<title> Regular Expression </title>
+</head>
+
+<body>
+<h2> Replace word </h2>
+
+<p> Replace "microsoft" with "google" in the paragraph below. </p>
+
+<button onClick="demo()"> Try It </button>
+
+<p id="natural"> Please visit Microsoft and Microsoft </p>
+
+<script>
+function demo(){
+var str = document.getElementById("natural").innerHTML;
+var txt = str.replace(/microsoft/i,"google");
+document.getElementById("natural").innerHTML = txt;
+}
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>test</title>
+</head>
+
+<body>
+    <div id="header">
+        
+    </div>
+    <input type="text" id="input-text" placeholder="Enter Text here">
+    <!--input text-->
+    <input type="button" value="click" id="btn" onclick="addText()">
+    <!--call function-->
+    <button><a href="test2.html">Next Page</a></button>
+    <!--get to new html page-->
+</body>
+<script>
+    function addText() {
+        document.getElementById('header').innerHTML = document.getElementById('input-text').value;
+    }
+</script>
+
+</html>
+
+<!-- <html>
+
+<head>
+    <title> Addition </title>
+</head>
+
+<body>
+    
+    <script>
+        var x = prompt("Enter a Value");
+        var y = prompt("Enter a Value");
+        var num1 = parseInt(x);
+        var num2 = parseInt(y);
+        var add = num1 + num2
+        document.write(add);
+    </script>
+</body>
+
+</html> -->

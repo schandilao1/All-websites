@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .newStyle {
+           position: fixed;
+           left: 0;
+           top: 0;
+           background: rgba(0,0,0,0.5);
+        }
+        #sampleDiv{
+            position: fixed;
+            top: 0;
+            right: 0;
+            background: #666;
+        }
+        #sampleDiv ul  {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        #sampleDiv ul li {
+            padding: 0rem 1rem;
+        }
+        .btn{
+            align-items: center;
+            display: flex;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adding className with JavaScript Example</h1>
+    <button class="btn"><i class='bx bx-menu'></i></button>
+    <h2>Click the above button to add className to below div</h2>
+    <div id="sampleDiv">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Feedback</li>
+        </ul>
+    </div>
+    <script>
+        document.querySelector(".btn").addEventListener("click", addClassName);
+        function addClassName() {
+            var element = document.getElementById("sampleDiv");
+            element.classList.toggle("newStyle");
+        }
+    </script>
+</body>
+
+</html>

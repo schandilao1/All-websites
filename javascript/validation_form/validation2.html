@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title> Form Validation </title>
+    <script>
+        function demo() {
+            var zz = /^[a-z0-9#$_]+@[a-z]+[.]+[com]+$/;
+            var result = document.frm.mail.value.match(zz);
+            if (result == null) {
+                alert('please fill email field');
+                document.frm.mail.value = ' ';
+                return false;
+            }
+            if (document.frm.g[0].checked == false && document.frm.g[1].checked == false) {
+                alert('please fill gender');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm" onSubmit="demo()">
+        Email:
+        <input type="text" name="mail">
+        <br><br>
+
+        Gender:
+        <input type="radio" name="g" value="m"> Male
+        <input type="radio" name="g" value="f"> Female
+        <br><br>
+
+        <input type="submit" name="sub" value="send">
+
+    </form>
+</body>
+
+</html>

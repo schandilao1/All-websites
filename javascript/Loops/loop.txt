@@ -1,0 +1,28 @@
+Loops - 
+
+While loop - It first initialise the value, then check the condition and then print the value and at last it increament or decreament the value.
+
+ini;
+while (con)
+{
+statement;
+inc/dec;
+}
+
+
+Do While - It first initialize the value, then print it and then increament / decreament the value and at last it checks the condition.
+
+ini;
+do{
+statement;
+inc/dec;
+}
+while(con)
+
+
+For - initialize, checking the condition and increament / decreament the value in only one statement.  
+
+for (ini; con; inc/dec)
+{
+statement;
+}

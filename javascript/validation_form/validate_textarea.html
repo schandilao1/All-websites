@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function validate(){
+               if (document.getElementById("txtarea").value == "")
+              {
+                   alert("Enter the permanent address");
+                   document.getElementById("txtarea").focus();
+               }
+
+               else {
+                        alert(document.getElementById("txtarea").value);
+                  }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Permanent Address</h2>
+        <textarea id="txtarea"></textarea><br />
+        <button onclick="validate()" style="margin: 5px 0px;">Validate</button>
+    </body>
+</html>

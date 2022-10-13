@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> For-in Loop </title>
+</head>
+
+<body>
+
+<p id="well"> </p>
+
+<script>
+var person = {fname:"Aman", lname:"Mangla", age:23};
+
+var txt = "";
+for(var x in person){
+txt += person[x] + " ";
+}
+document.getElementById("well").innerHTML = txt;
+
+</script>
+
+</body>
+</html>

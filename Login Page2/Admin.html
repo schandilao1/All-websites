@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="/Admin.css"> -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>PES</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        html {
+            font-size: 80%;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .container h1 {
+            letter-spacing: 1rem;
+            text-align: center;
+            padding: 5rem 0rem;
+            font-weight: 900;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .row {
+            width: 45%;
+        }
+
+        .col {
+            border-radius: 10px;
+            padding: 2rem 0rem;
+            background: rgba(159, 157, 157, 0.5);
+        }
+
+        .col .box {
+            padding: .5rem 0rem;
+        }
+
+        .col #login-form {
+            padding: 0rem 2rem;
+        }
+
+        .col .box h2 {
+            color: white;
+            font-size: 22px;
+            font: bolder;
+        }
+
+        .col .box .login-form-field {
+            width: 100%;
+            outline: none;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-bottom: 2px solid #ffffff;
+            padding: .5rem 0rem;
+            font-size: 16px;
+            background: transparent;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 1rem 0rem;
+            border: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .5s;
+            border-radius: 15px;
+        }
+
+        .btn:hover {
+            background: #043653;
+        }
+
+
+        @media screen and (max-width: 775px) {
+            html {
+                font-size: 50%;
+            }
+
+            .col .box h2 {
+                color: rgb(53, 53, 53);
+                font-size: 15px;
+                font: bolder;
+            }
+
+            .col .box .login-form-field {
+                font-size: 10px;
+
+            }
+        }
+
+        @media screen and (max-width: 555px) {
+            html {
+                font-size: 40%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            html {
+                font-size: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid mb-5">
+        <div class="container">
+            <h1>PES Login Page</h1>
+            <div class="row mx-auto">
+                <div class="col">
+                    <form id="login-form">
+                        <div class="box">
+                            <h2>Username</h2>
+                            <input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="Username">
+                        </div>
+                        <div class="box">
+                            <h2>Password</h2>
+                            <input type="password" name="password" id="password-field" class="login-form-field"
+                                placeholder="Password">
+                        </div>
+                        <br>
+                        <input type="submit" value="Login" class="btn btn-primary btn-lg" id="login-form-submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const loginForm = document.getElementById("login-form");
+        const loginButton = document.getElementById("login-form-submit");
+
+        loginButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            const username = loginForm.username.value;
+            const password = loginForm.password.value;
+            console.log(typeof username);
+            console.log(typeof password);
+            if (username === "Admin" && password === "Admin") {
+                window.alert("Welcome");
+                location.assign("http://127.0.0.1:5501/pesButton.html");
+            }
+            else if (username == "" && password == "") {
+                window.alert("Ooops!! Enter A SiteId Username And Password");
+            }
+            else if (username != "Admin" && password == "Admin") {
+                window.alert("Incorrect Username");
+            }
+            else if (username == "Admin" && password != "Admin") {
+                window.alert("Incorrect Password");
+            }
+            else {
+                window.alert("Nothing Is Wrong Please Check A Value");
+            }
+        })
+    </script>
+
+</body>
+
+</html>

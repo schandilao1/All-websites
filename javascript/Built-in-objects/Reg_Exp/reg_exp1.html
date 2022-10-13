@@ -1,0 +1,23 @@
+<html>
+<head>
+<title> Regular Expression </title>
+</head>
+
+<body>
+<p> Click the button to do a case-insensitive search for "Manav" in a string. </p>
+
+<button onClick="demo()"> Try It </button>
+
+<p id="natural"> </p>
+
+<script>
+function demo(){
+var str = "Visit Manav Rachna College Manav";
+var patt1 = /manav/i;
+var result = str.match(patt1);
+document.getElementById("natural").innerHTML = result;
+}
+</script>
+ 
+</body>
+</html>

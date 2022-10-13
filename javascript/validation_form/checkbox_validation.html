@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title> Checkboxes </title>
+
+    <script>
+        function demo() {
+            var zz = /^[a-z]+$/;
+            var result = document.frm.na.value.match(zz);
+            if (result == null) {
+                alert('please fill name field');
+                document.frm.na.value = ' ';
+                return false;
+            }
+            if (document.frm.c1.checked == false && document.frm.c2.checked == false && document.frm.c3.checked == false && document.frm.c4.checked == false) {
+                alert('please fill course field');
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm" onsubmit="demo()">
+        Name:
+        <input type="text" name="na">
+        <br><br>
+
+        Course:
+        <input type="checkbox" name="c1" value="php"> Php
+        <input type="checkbox" name="c2" value="java"> Java
+        <input type="checkbox" name="c3" value="dotnet"> Dotnet
+        <input type="checkbox" name="c4" value="javascript"> Javascript
+
+        <br><br>
+
+        <input type="submit" name="sub" value="submit">
+
+    </form>
+</body>
+
+</html>
